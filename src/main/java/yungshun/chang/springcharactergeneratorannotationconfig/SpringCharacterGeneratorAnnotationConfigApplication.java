@@ -17,6 +17,9 @@ public class SpringCharacterGeneratorAnnotationConfigApplication {
         // [3] Call a method on the bean
         System.out.println(characterProfile.getName());
 
+        // [5] Call method to get personality
+        System.out.println(characterProfile.getPersonality());
+
         // [4] Close the context
         context.close();
     }
