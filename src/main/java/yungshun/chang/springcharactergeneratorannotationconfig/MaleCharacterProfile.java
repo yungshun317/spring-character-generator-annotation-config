@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class MaleCharacterProfile implements CharacterProfile {
-
+    @Autowired
     private PersonalityService personalityService;
 
     /* Constructor injection
@@ -20,12 +20,13 @@ public class MaleCharacterProfile implements CharacterProfile {
         System.out.println(">> MaleCharacterProfile: inside default constructor");
     }
 
-    // Define a setter method
+    /* Define a setter method for setter injection
     @Autowired
     public void setPersonalityService(PersonalityService personalityService) {
         System.out.println(">> MaleCharacterProfile: inside setPersonalityService() method");
         this.personalityService = personalityService;
     }
+    */
 
     @Override
     public String getName() {
